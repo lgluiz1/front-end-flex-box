@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variaves de cores da pagina */
+
+:root {
+    /* Variaves Primarias*/
+
+    --cor-red: hsl(0, 78%, 62%);
+    --cor-cyan: hsl(180, 62%, 55%);
+    --cor-orange: hsl(34, 97%, 64%);
+    --cor-blue: hsl(212, 86%, 64%);
+
+    /* Variaves Neutras*/
+
+    --cor-very-dark-blue: hsl(234, 12%, 34%);
+    --cor-grayish-blue: hsl(229, 6%, 66%);
+    --cor-Very-light-gray: hsl(0, 0%, 98%);
+}
+
+/* config da pagina */
+
+body {
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: var(--cor-Very-light-gray);
+}
+
+/* titutlo da pagina espaço e largura */
+
+header {
+    width: 100%;
+    padding-top: 30px;
+}
+
+/* titutlo da pagina flexivel e em coluna */
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* titutlo da pagina cor e tamanho */
+
+#header .header-titulo {
+    color: var(--cor-very-dark-blue);
+    font-size: 45px;
+}
+
+/* sub-titulo da pagina cor,tamanho e espaços */
+
+#header .header-sub {
+    font-weight: 200;
+    font-size: 45px;
+    padding-top: 10px;
+}
+
+/* paragrafos da pagina cor,tamanho e espaços */
+
+#header .header-p {
+    color: var(--cor-grayish-blue);
+    padding-top: 10px;
+}
+
+/* espaços entre textos e o flexbox */
+
+main {
+    margin-bottom: 80px;
+}
+
+/* conteineres flexbox responsivo*/
+
+main .content {
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    transition: all 0.3s;
+ }
+
+/* conteineres confg*/
+
+ .conteiner {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background: var(--cor-Very-light-gray);
+    box-shadow: 0.1px 0.1px 10px 0.1px var(--cor-very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 30px;
+}
+
+/* conteineres css espaço*/
+
+.conteiner-central .css {
+    margin-top: 50px;
+} 
+
+/* conteineres cores bordas */
+
+.content .js {
+    align-self: center;
+    border-top: 5px solid var(--cor-orange);
+    transition: all 0.5s;
+}
+div.content .react {
+    align-self: center;
+    border-top: 5px solid var(--cor-red);
+}
+div.conteiner-central .html {
+    border-top: 5px solid var(--cor-blue);
+}
+div.conteiner-central .css {
+    border-top: 5px solid var(--cor-cyan);
+}
+
+/* conteineres animaçao hover cores bordas */
+
+div.content .js:hover {
+    align-self: center;
+    border-top: 5px solid var(--cor-very-dark-blue); 
+}
+div.content .react:hover {
+    align-self: center;
+    border-top: 5px solid var(--cor-very-dark-blue);
+}
+div.conteiner-central .html:hover {
+    border-top: 5px solid var(--cor-very-dark-blue);
+}
+div.conteiner-central .css:hover {
+    border-top: 5px solid var(--cor-very-dark-blue);
+}
+
+/* titulo da flex*/
+
+.titulo-conteiner {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 25px;
+    color: var(--cor-very-dark-blue);
+}
+.paragrafo-conteiner{
+    text-align: left;
+    padding-right: 20px;
+    color: var(--cor-grayish-blue);
+}
+/* config dos icons*/
+
+i {
+    font-size: 80px;
+    align-self: flex-end;
+    padding-right: 20px;
+}
+
+/* icones da flex*/
+
+.fa-html5 {
+    color: var(--cor-blue);
+}
+.fa-square-js {
+    color: var(--cor-orange);
+}
+.fa-css3-alt {
+    color: var(--cor-cyan);
+}
+.fa-react {
+    color: var(--cor-red);
+}
+
+/* footer cong*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .titulo-footer {
+    color: var(--cor-very-dark-blue);
+    font-size: 45px;
+}
+footer .para-footer {
+    color: var(--cor-very-dark-blue);
+}
+
+/* ul confg */
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-bottom: 50px;
+    gap: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+} 
+
+/* li confg */
+
+li {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    color: var(--cor-grayish-blue);
+}
+
+/* li a confg */
+
+li a {
+    text-decoration: none;
+    align-self: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--cor-grayish-blue);
+}
+
+/* hover social  */
+
+li a:hover {
+    color: var(--cor-very-dark-blue);    
+}
+
+/* creditos  */
+
+.attribution {
+    margin-bottom: 30px;
+    color: var(--cor-very-dark-blue);    
+}
+
+.attribution a {
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--cor-very-dark-blue);
+}
+
+/* Responsividade para 1000px*/
+
+@media (max-width:1000px) {
+    main .content{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;        
+        gap: 50px;}
+}
+
+/* Responsividade para 400px*/
+
+@media (max-width:400px) { 
+    #header .header-titulo{
+        color: var(--cor-very-dark-blue);
+        font-size: 25px;
+    }
+    #header .header-sub {
+        font-weight: 200;
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    #header .header-p {
+        color: var(--cor-grayish-blue);
+        /*width: 600px;*/
+        padding-top: 10px;
+        font-size: 15px;
+    }
+}
