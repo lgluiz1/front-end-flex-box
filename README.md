@@ -1,4 +1,4 @@
-# Login page 📋💻
+# Flex Box page 📋💻
 O projeto consiste na criação de uma página utilizando Flex Box em todo projeto para aprendizado.
 Para visitar o projeto, <a href="https://lgluiz1.github.io/front-end-flex-box/">clique aqui</a>.
 
